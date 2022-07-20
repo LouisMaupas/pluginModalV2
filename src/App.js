@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import useModal from "./lib/hooks";
+import Modal from "./lib/ModalComponent";
 
-function App() {
+export default function App() {
+
+  // exemple of custom hook use case
+  const { isDisplayed: exempleOfModalToDisplay, toggleModal: exempleOfModalTrigger } = useModal();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <>
+      <div className="App">
+
+        {/* Exemple of button to display modal */}
+        <button onClick={exempleOfModalTrigger}>
+          Click here to display Modal 
+        </button>
+
+        {/* Exemple of Modal */}
+        <Modal
+          isShowing={exempleOfModalToDisplay}
+          toggle={exempleOfModalTrigger}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          Exemple of modal text content.
+        </Modal>
+
+      </div>
+    </>
   );
 }
-
-export default App;
