@@ -2,7 +2,7 @@ import React from "react";
 // https://reactjs.org/docs/portals.html
 import ReactDOM from "react-dom";
 import styled from "styled-components";
-// import close from "./icon-close.svg"; TODO
+import close from "./icon-close.svg";
 
 const Backgroud = styled.div`
   position: absolute;
@@ -48,6 +48,7 @@ const Modal = ({ isShowing, toggle, ...props }) =>
                 <div className="modal-header">
                   <ImgBox>
                   <img 
+                  src={close}
                     type="button"
                     className="modal-close-button"
                     onClick={toggle}
