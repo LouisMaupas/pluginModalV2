@@ -13,7 +13,7 @@ The simplest react ready-to-use Modal component ever.
 ### Download & installation
 
 ```
-npm i modal-react-lm
+npm i react-modal-lm
 ```
 
 ## How to use it
