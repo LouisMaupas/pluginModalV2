@@ -5,7 +5,7 @@
   "license": "MIT",
   "version": "1.0.5",
   "private": false,
-  "main": "dist/*.js",
+  "main": "dist/modal.js",
   "module": "dist/*.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
