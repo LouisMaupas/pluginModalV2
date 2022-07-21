@@ -2,6 +2,10 @@
 
 The simplest react ready-to-use Modal component ever.
 
+It looks like this :
+
+![how to use](https://github.com/LouisMaupas/pluginModalV2/blob/main/exemple.PNG?raw=true)
+
 ## Installation
 
 ### Requirements
