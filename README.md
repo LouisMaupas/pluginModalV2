@@ -18,7 +18,13 @@ npm i react-modal-lm
 
 ## How to use it
 
-import the plugin in your component and fill the props like below :point_down:
+import the plugin in your component with
+
+```
+import Modal from "react-modal-lm";
+```
+
+Then use useModal hook and Modal component like below :point_down:
 ![how to use](https://github.com/LouisMaupas/pluginModalV2/blob/main/howToUseIt.PNG?raw=true)
 
 ## License
