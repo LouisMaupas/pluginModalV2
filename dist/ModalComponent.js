@@ -15,7 +15,7 @@ var _iconClose = _interopRequireDefault(require("./icon-close.svg"));
 
 var _excluded = ["isShowing", "toggle"];
 
-var _templateObject, _templateObject2, _templateObject3;
+var _templateObject, _templateObject2, _templateObject3, _templateObject4;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -25,19 +25,22 @@ function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) r
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var Backgroud = _styledComponents.default.div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  background-color: rgba(0, 0, 0, 0.5);\n  z-index: 1000;\n"]))),
-    Wrapper = _styledComponents.default.div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  height: 75px;\n  width: 500px;\n  background-color: white;\n  border: solid 1px black;\n  border-radius: 15px;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  z-index: 1001;\n  display: flex;\n  justify-content: center;\n"]))),
-    ImgBox = _styledComponents.default.div(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  position: absolute;\n  right: 1rem;\n  top: 0.5rem;\n  & :hover {\n    cursor: pointer;\n    transform: scale(1.5);\n  }\n"])));
+var Backgroud = _styledComponents.default.div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    position: absolute;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    background-color: rgba(0, 0, 0, 0.5);\n    z-index: 1000;\n  "]))),
+    Wrapper = _styledComponents.default.div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n    height: 75px;\n    width: 500px;\n    background-color: white;\n    border: solid 1px black;\n    border-radius: 15px;\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n    z-index: 1001;\n    display: flex;\n    justify-content: center;\n  "]))),
+    ModalDiv = _styledComponents.default.div(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n    display: flex;\n    align-items: center;\n  "]))),
+    ImgBox = _styledComponents.default.div(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n    position: absolute;\n    right: 1rem;\n    top: 0.5rem;\n    & :hover {\n      cursor: pointer;\n      transform: scale(1.5);\n    }\n  "])));
 
 var Modal = function Modal(_ref) {
   var isShowing = _ref.isShowing,
       toggle = _ref.toggle,
       props = _objectWithoutProperties(_ref, _excluded);
 
-  return isShowing // createPortal() allow to display a component in the DOM outside of its parent component.
-  ? /*#__PURE__*/_reactDom.default.createPortal( /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(Backgroud, {
+  return isShowing ?
+  /*#__PURE__*/
+  // createPortal() allow to display a component in the DOM outside of its parent component.
+  _reactDom.default.createPortal( /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(Backgroud, {
     onClick: toggle
-  }, /*#__PURE__*/_react.default.createElement(Wrapper, null, /*#__PURE__*/_react.default.createElement("div", {
+  }, /*#__PURE__*/_react.default.createElement(Wrapper, null, /*#__PURE__*/_react.default.createElement(ModalDiv, {
     className: "modal"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "modal-header"
