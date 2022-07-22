@@ -3,10 +3,10 @@
   "author": "Louis Maupas",
   "description": "The simplest React modal",
   "license": "MIT",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "private": false,
-  "main": "dist/modal.js",
-  "module": "dist/modal.js",
+  "main": "dist/Modal.js",
+  "module": "dist/Modal.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
