@@ -3,7 +3,7 @@
   "author": "Louis Maupas",
   "description": "The simplest and lighter React modal",
   "license": "MIT",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "main": "dist/Modal.js",
   "module": "dist/Modal.js",
   "files": [ "dist", "README.md" ],
