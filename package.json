@@ -1,12 +1,13 @@
 {
   "name": "react-modal-lm",
   "author": "Louis Maupas",
-  "description": "The simplest React modal",
+  "description": "The simplest and lighter React modal",
   "license": "MIT",
   "version": "1.0.10",
   "main": "dist/Modal.js",
   "module": "dist/Modal.js",
   "files": [ "dist", "README.md" ],
+  "keywords": ["react", "modal", "lm", "simple", "light"],
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
